@@ -4,24 +4,15 @@ using UnityEngine;
 
 public class GlowActivation : MonoBehaviour
 {
-    Transform glow;
-    private void Start()
-    {
-        glow = transform.GetChild(0);
-    }
+    public GameObject Glow;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    public void ActivateGlow()
     {
-        if (collision.CompareTag("Player"))
-        {
-            glow.gameObject.SetActive(true);
-        }
+        Glow.gameObject.SetActive(true);
     }
-    private void OnTriggerExit2D(Collider2D collision)
+    public void DeactivateGlow()
     {
-        if (collision.CompareTag("Player"))
-        {
-            glow.gameObject.SetActive(false);
-        }
+        Glow.gameObject.SetActive(false);
     }
 }
