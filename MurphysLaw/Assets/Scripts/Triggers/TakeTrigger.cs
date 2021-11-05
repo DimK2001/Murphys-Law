@@ -9,7 +9,7 @@ public class TakeTrigger : Trigger
     {
         if (playerInside && Input.GetButtonDown("Interact"))
         {
-            player.GetComponent<Player>().PlayAnimation(AnimationName);
+            //player.GetComponent<Player>().PlayAnimation(AnimationName);
             FindObjectOfType<Inventory>().AddItem((int)Item);
             Destroy(gameObject);
         }
