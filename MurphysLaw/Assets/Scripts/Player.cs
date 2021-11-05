@@ -30,9 +30,9 @@ public class Player : MonoBehaviour
         {
             //Анимка движения влево
         }
-        if (col.IsTouchingLayers(3))//Проверка, что игрок стоит на полу (слой 3)
+        if (col.IsTouchingLayers(1 << 3))//Проверка, что игрок стоит на полу (слой 3)
         {
-            rb.velocity = Vector2.zero;//не обязательная хуйня, а просто чтоб не багало
+            rb.velocity = Vector2.zero;
             rb.velocity = new Vector2(Speed * horizontaMoveInput, rb.velocity.y);
         }
     }
