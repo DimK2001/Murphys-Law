@@ -10,6 +10,7 @@ public class Trigger : MonoBehaviour
 
     protected bool playerInside = false;
     protected GameObject player;
+
     private void Update()
     {
         if (playerInside && Input.GetButtonDown("Interact"))
@@ -23,7 +24,9 @@ public class Trigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Glow.gameObject.SetActive(true);
-            ButtonImg = collision.GetComponent<Player>().Button;
+            ButtonImg = collision.GetComponent<Player>().Buttons;
+            ButtonImg.SetActive(true);
+      
             ButtonImg.gameObject.SetActive(true);
             player = collision.gameObject;
             playerInside = true;
