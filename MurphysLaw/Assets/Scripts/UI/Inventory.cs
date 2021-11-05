@@ -10,7 +10,6 @@ public class Inventory : MonoBehaviour
     public void AddItem(int _num)
     {
         itemsInInventory.Add(Instantiate(ItemObjects[_num], transform));
-        itemsInInventory[itemsInInventory.Count - 1].transform.parent = this.gameObject.transform;
     }
     public void DelItem(int _num)
     {
