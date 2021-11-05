@@ -5,12 +5,11 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public GameObject Glow;
-    public GameObject ButtonImg;
+    private GameObject ButtonImg;
     public string AnimationName;
 
     protected bool playerInside = false;
     protected GameObject player;
-
     private void Update()
     {
         if (playerInside && Input.GetButtonDown("Interact"))
@@ -24,6 +23,7 @@ public class Trigger : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Glow.gameObject.SetActive(true);
+            ButtonImg = collision.GetComponent<Player>().Button;
             ButtonImg.gameObject.SetActive(true);
             player = collision.gameObject;
             playerInside = true;

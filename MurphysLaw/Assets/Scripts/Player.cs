@@ -5,7 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float Speed = 10;
-
+    public GameObject Button;
 
     private Rigidbody2D rb;
     private Collider2D col;
