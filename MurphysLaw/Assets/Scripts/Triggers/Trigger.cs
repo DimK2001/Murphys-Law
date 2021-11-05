@@ -36,6 +36,7 @@ public class Trigger : MonoBehaviour
             Glow.gameObject.SetActive(false);
             ButtonImg.gameObject.SetActive(false);
             playerInside = false;
+            //player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
 }
