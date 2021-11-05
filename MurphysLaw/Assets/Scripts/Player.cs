@@ -22,13 +22,13 @@ public class Player : MonoBehaviour
     {
         float horizontaMoveInput = Input.GetAxis("Horizontal");
 
-        if (horizontaMoveInput < 0)
+        if (horizontaMoveInput < 0 && transform.localScale.x == 1)
         {
-            //Проиграть анимку движения вправо  
+            transform.localScale = new Vector3(-1, 1, 1);
         }
-        else if (horizontaMoveInput > 0)
+        else if (horizontaMoveInput > 0 && transform.localScale.x == -1)
         {
-            //Анимка движения влево
+            transform.localScale = new Vector3(1, 1 ,1);
         }
         if (col.IsTouchingLayers(1 << 3))//Проверка, что игрок стоит на полу (слой 3)
         {
