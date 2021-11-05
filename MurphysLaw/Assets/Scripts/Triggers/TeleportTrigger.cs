@@ -11,11 +11,21 @@ public class TeleportTrigger : Trigger
         if (playerInside && Input.GetButtonDown("Interact"))
         {
             player.transform.position = startOffsetPlayerPos.position;
-            player.GetComponent<Player>().PlayAnimation(AnimationName, this);
+            //player.GetComponent<Player>().PlayAnimation(AnimationName, this);
+            TeleportToEnd();
+            StartCoroutine(Stop());
         }
     }
     public void TeleportToEnd()
     {
         player.transform.position = endOffsetPlayerPos.position;
     }
+
+    IEnumerator Stop()
+    {
+        //yield return new WaitForSeconds(0.03f);
+        yield return new WaitForFixedUpdate();
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+    }
+
 }
