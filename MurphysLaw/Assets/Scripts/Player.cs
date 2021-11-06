@@ -7,6 +7,9 @@ public class Player : MonoBehaviour
     public float Speed = 10;
     public GameObject Buttons;
 
+    public AudioClip Stair;
+    public AudioClip Walk;
+
     private Rigidbody2D rb;
     private Collider2D col;
     private Animator anim;
@@ -40,10 +43,16 @@ public class Player : MonoBehaviour
             rb.velocity = Vector2.zero;
             rb.velocity = new Vector2(Speed * horizontaMoveInput, rb.velocity.y);
             anim.SetBool("Walking", true);
+            if (!GetComponent<AudioSource>().isPlaying)
+            {
+                GetComponent<AudioSource>().clip = Walk;
+                GetComponent<AudioSource>().Play();
+            }
         }
         if (horizontaMoveInput == 0)
         {
             anim.SetBool("Walking", false);
+            GetComponent<AudioSource>().Stop();
         }
 
         /*
@@ -70,10 +79,16 @@ public class Player : MonoBehaviour
             if (verticalMoveInput != 0)
             {
                 anim.SetBool("Climbing", true);
+                if (!GetComponent<AudioSource>().isPlaying)
+                {
+                    GetComponent<AudioSource>().clip = Stair;
+                    GetComponent<AudioSource>().Play();
+                }
             }
             else
             {
                 anim.SetBool("Climbing", false);
+                GetComponent<AudioSource>().Stop();
             }
             
             // Тут должна быть анимация карабкания
