@@ -67,11 +67,21 @@ public class Player : MonoBehaviour
             float verticalMoveInput = Input.GetAxis("Vertical");
             rb.isKinematic = true;
             rb.velocity = new Vector2(rb.velocity.x, Speed * verticalMoveInput);
+            if (verticalMoveInput != 0)
+            {
+                anim.SetBool("Climbing", true);
+            }
+            else
+            {
+                anim.SetBool("Climbing", false);
+            }
+            
             // Тут должна быть анимация карабкания
             rb.transform.localScale = new Vector3(directX, 1, 1);
         }
         else if (!onStairs)
         {
+            anim.SetBool("Climbing", false);
             transform.position = new Vector3(transform.position.x, transform.position.y, 0f);
             if (rb.isKinematic)
             {
