@@ -23,6 +23,7 @@ public class TrafficLights : IntreactiveObject
             Opened.SetActive(true);
             Green.SetActive(true);
             Interactable = false;
+            inventory.DelItem(inventory.itemsInInventory.FindIndex(x => x.GetComponent<UIItem>().Type == Item.screwdriver));
         }
     }
     public override void UnInteract(GameObject _player)
