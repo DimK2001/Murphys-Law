@@ -14,6 +14,7 @@ public class Player : MonoBehaviour
     private TeleportTrigger nowTp;
 
     public bool onStairs;
+    public float directX;
     private void Start()
     {
         onStairs = false;
@@ -67,7 +68,7 @@ public class Player : MonoBehaviour
             rb.isKinematic = true;
             rb.velocity = new Vector2(rb.velocity.x, Speed * verticalMoveInput);
             // Тут должна быть анимация карабкания
-            rb.transform.localScale = new Vector3(1, 1, 1);
+            rb.transform.localScale = new Vector3(directX, 1, 1);
         }
         else if (!onStairs)
         {

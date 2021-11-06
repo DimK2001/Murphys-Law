@@ -5,6 +5,7 @@ using UnityEngine;
 public class StairsTrigger : Trigger
 {
     public Transform startOffsetPlayerPos;
+    
     private void Update()
     {
         if (playerInside && Input.GetButtonDown("Interact"))
@@ -12,6 +13,8 @@ public class StairsTrigger : Trigger
             player.GetComponent<Player>().onStairs = true;
             player.transform.position = startOffsetPlayerPos.position; // залезает на лестницу
             //player.GetComponent<Player>().PlayAnimation(AnimationName, this);
+            player.GetComponent<Player>().directX = transform.parent.localScale.x;
+            
             StartCoroutine(Stop());
         }
         

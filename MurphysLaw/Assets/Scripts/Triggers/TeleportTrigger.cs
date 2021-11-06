@@ -21,7 +21,7 @@ public class TeleportTrigger : Trigger
         player.transform.position = endOffsetPlayerPos.position;
     }
 
-    IEnumerator Stop()
+    public IEnumerator Stop()
     {
         //yield return new WaitForSeconds(0.03f);
         yield return new WaitForFixedUpdate();
