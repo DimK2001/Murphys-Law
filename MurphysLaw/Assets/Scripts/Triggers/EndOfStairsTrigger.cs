@@ -5,7 +5,7 @@ using UnityEngine;
 public class EndOfStairsTrigger : MonoBehaviour
 {
     public Transform endOffsetPlayerPos;
-
+    public GameObject Colliders;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -14,6 +14,14 @@ public class EndOfStairsTrigger : MonoBehaviour
             {
                 collision.transform.position = endOffsetPlayerPos.position; // перенос игрока с лестницы на поверхность 
                 collision.GetComponent<Player>().onStairs = false;
+                if (Colliders.activeInHierarchy)
+                {
+                    Colliders.SetActive(false);
+                }
+                else
+                {
+                    Colliders.SetActive(true);
+                }
                 StartCoroutine(Stop(collision));
             }
         }
