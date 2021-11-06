@@ -162,11 +162,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interactable: 1
-  Red: {fileID: 1834151169755150659}
   Green: {fileID: 1834151169566420392}
+  Both: {fileID: 1834151169922023733}
   Opened: {fileID: 1834151168943857328}
   Lid: {fileID: 1834151169466551228}
   Collider: {fileID: 1834151169208267803}
+  BusStop: {fileID: 0}
 --- !u!114 &1834151168753844860
 MonoBehaviour:
   m_ObjectHideFlags: 0

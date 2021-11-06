@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class TrafficLights : IntreactiveObject
 {
-    public GameObject Red;
     public GameObject Green;
+    public GameObject Both;
     public GameObject Opened;
     public GameObject Lid;
     public GameObject Collider;
+    public GameObject BusStop;
     public override void Interact(GameObject _player)
     {
         if (Green.activeInHierarchy)
@@ -18,11 +19,12 @@ public class TrafficLights : IntreactiveObject
         if (Input.GetButtonDown("Interact") && inventory.itemsInInventory.Find(x => x.GetComponent<UIItem>().Type == Item.screwdriver) && Lid.activeInHierarchy)
         {
             GetComponent<InteractiveTrigger>().Deactivate();
-            Collider.SetActive(false);
+            //Collider.SetActive(false);
             Lid.SetActive(false);
             Opened.SetActive(true);
-            Green.SetActive(true);
+            Both.SetActive(true);
             Interactable = false;
+            BusStop.GetComponent<BusStop>().Traffic();
             inventory.DelItem(inventory.itemsInInventory.FindIndex(x => x.GetComponent<UIItem>().Type == Item.screwdriver));
         }
     }
