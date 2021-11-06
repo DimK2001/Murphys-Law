@@ -5,8 +5,8 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public GameObject[] ItemObjects;
-
-    private List<GameObject> itemsInInventory = new List<GameObject>();
+    [HideInInspector]
+    public List<GameObject> itemsInInventory = new List<GameObject>();
     public void AddItem(int _num)
     {
         itemsInInventory.Add(Instantiate(ItemObjects[_num], transform));

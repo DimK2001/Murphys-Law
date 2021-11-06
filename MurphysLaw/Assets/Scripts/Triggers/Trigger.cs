@@ -5,18 +5,18 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public GameObject Glow;
-    public GameObject ButtonImg;
     public string AnimationName;
 
     protected bool playerInside = false;
     protected GameObject player;
+    protected GameObject ButtonImg;
 
     private void Update()
     {
         if (playerInside && Input.GetButtonDown("Interact"))
         {
             player.GetComponent<Player>().PlayAnimation(AnimationName);
-            player.GetComponent<Rigidbody>().velocity = Vector2.zero;
+            player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)
