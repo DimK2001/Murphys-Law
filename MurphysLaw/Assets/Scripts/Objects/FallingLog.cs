@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class FallingLog : IntreactiveObject
 {
+    public GameObject PlotDeath;
     public override void Interact(GameObject _player)
     {
         GetComponent<AudioSource>().Play();
+        PlotDeath.SetActive(true);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         Collider[] col = GetComponents<Collider>();
         foreach(Collider c in col)
