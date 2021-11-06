@@ -33,11 +33,18 @@ public class Player : MonoBehaviour
         {
             transform.localScale = new Vector3(1, 1, 1);
         }
+        
         if (col.IsTouchingLayers(1 << 3))//Проверка, что игрок стоит на полу (слой 3)
         {
             rb.velocity = Vector2.zero;
             rb.velocity = new Vector2(Speed * horizontaMoveInput, rb.velocity.y);
+            anim.SetBool("Walking", true);
         }
+        if (horizontaMoveInput == 0)
+        {
+            anim.SetBool("Walking", false);
+        }
+
         /*
         if (onStairs && Input.GetButtonDown("Interact"))
         {
