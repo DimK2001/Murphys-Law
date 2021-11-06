@@ -23,6 +23,7 @@ public class TrafficLights : IntreactiveObject
             Lid.SetActive(false);
             Opened.SetActive(true);
             Both.SetActive(true);
+            Green.SetActive(false);
             Interactable = false;
             BusStop.GetComponent<BusStop>().Traffic();
             inventory.DelItem(inventory.itemsInInventory.FindIndex(x => x.GetComponent<UIItem>().Type == Item.screwdriver));
