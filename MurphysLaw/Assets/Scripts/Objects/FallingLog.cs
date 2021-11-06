@@ -6,6 +6,7 @@ public class FallingLog : IntreactiveObject
 {
     public override void Interact(GameObject _player)
     {
+        GetComponent<AudioSource>().Play();
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         Collider[] col = GetComponents<Collider>();
         foreach(Collider c in col)

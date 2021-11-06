@@ -11,7 +11,6 @@ public class StairsTrigger : Trigger
         {
             player.GetComponent<Player>().onStairs = true;
             player.transform.position = startOffsetPlayerPos.position; // залезает на лестницу
-
             //player.GetComponent<Player>().PlayAnimation(AnimationName, this);
             StartCoroutine(Stop());
         }
