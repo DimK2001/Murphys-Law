@@ -15,8 +15,11 @@ public class InteractiveTrigger : Trigger
     {
         if (collision.CompareTag("Player"))
         {
-            Glow.gameObject.SetActive(false);
-            ButtonImg.gameObject.SetActive(false);
+            if (Glow != null)
+            {
+                Glow.gameObject.SetActive(false);
+                ButtonImg.gameObject.SetActive(false);
+            }
             playerInside = false;
             GetComponent<IntreactiveObject>().UnInteract(player);
         }
@@ -25,19 +28,23 @@ public class InteractiveTrigger : Trigger
     {
         if (collision.CompareTag("Player") && GetComponent<IntreactiveObject>().Interactable)
         {
-            Glow.gameObject.SetActive(true);
-            ButtonImg = collision.GetComponent<Player>().Buttons;
-            ButtonImg.SetActive(true);
-
-            ButtonImg.gameObject.SetActive(true);
+            if (Glow != null)
+            {
+                Glow.gameObject.SetActive(true);
+                ButtonImg = collision.GetComponent<Player>().Buttons;
+                ButtonImg.gameObject.SetActive(true);
+            }
             player = collision.gameObject;
             playerInside = true;
         }
     }
     public void Deactivate()
     {
-        Glow.gameObject.SetActive(false);
-        ButtonImg.gameObject.SetActive(false);
+        if (Glow != null)
+        {
+            Glow.gameObject.SetActive(false);
+            ButtonImg.gameObject.SetActive(false);
+        }
         playerInside = false;
         GetComponent<IntreactiveObject>().UnInteract(player);
         this.enabled = false;
