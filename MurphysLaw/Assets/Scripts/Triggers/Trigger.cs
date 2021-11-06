@@ -5,7 +5,7 @@ using UnityEngine;
 public class Trigger : MonoBehaviour
 {
     public GameObject Glow;
-    private GameObject ButtonImg;
+    public GameObject ButtonImg;
     public string AnimationName;
 
     protected bool playerInside = false;
