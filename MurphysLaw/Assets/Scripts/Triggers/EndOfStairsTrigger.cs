@@ -14,6 +14,7 @@ public class EndOfStairsTrigger : MonoBehaviour
             {
                 collision.transform.position = endOffsetPlayerPos.position; // перенос игрока с лестницы на поверхность 
                 collision.GetComponent<Player>().onStairs = false;
+                /*
                 if (Colliders.activeInHierarchy)
                 {
                     Colliders.SetActive(false);
@@ -21,7 +22,7 @@ public class EndOfStairsTrigger : MonoBehaviour
                 else
                 {
                     Colliders.SetActive(true);
-                }
+                }*/
                 StartCoroutine(Stop(collision));
             }
         }
