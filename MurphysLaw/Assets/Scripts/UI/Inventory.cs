@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class Inventory : MonoBehaviour
 {
     public GameObject[] ItemObjects;
-    [HideInInspector]
+    //[HideInInspector]
     public List<GameObject> itemsInInventory = new List<GameObject>();
     public void AddItem(int _num)
     {
