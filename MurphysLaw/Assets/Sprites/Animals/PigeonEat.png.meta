@@ -1,37 +1,34 @@
 fileFormatVersion: 2
-guid: 850a88b2333e0f84c80b005f77920387
+guid: 4c430d8831a9ccb4aa1425f51a7be924
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1945920011541812976
-    second: curtains_0
+      213: -7226129641500431563
+    second: PigeonEat_0
   - first:
-      213: -9062350675499592522
-    second: curtains_1
+      213: 4768355157361762958
+    second: PigeonEat_1
   - first:
-      213: 5985943198395807203
-    second: curtains_2
+      213: 7228867877752070545
+    second: PigeonEat_2
   - first:
-      213: 4511244500115640724
-    second: curtains_3
+      213: -8366482135158643605
+    second: PigeonEat_3
   - first:
-      213: 8126605731962522951
-    second: curtains_4
+      213: 3531318491921200308
+    second: PigeonEat_4
   - first:
-      213: 4282287717004934043
-    second: curtains_5
+      213: 1502635966610986910
+    second: PigeonEat_5
   - first:
-      213: 3157788893661572664
-    second: curtains_6
+      213: 7732563917493482718
+    second: PigeonEat_6
   - first:
-      213: 4307575579981569687
-    second: curtains_7
+      213: 3603265520680434393
+    second: PigeonEat_7
   - first:
-      213: -6828841787948938364
-    second: curtains_8
-  - first:
-      213: -2258618658647814045
-    second: curtains_9
+      213: -7081511834781288275
+    second: PigeonEat_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -133,211 +130,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: curtains_0
+      name: PigeonEat_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 15
-        width: 20
-        height: 27
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 019e9b63f04bef4e0800000000000000
-      internalID: -1945920011541812976
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_1
-      rect:
-        serializedVersion: 2
-        x: 38
-        y: 13
-        width: 20
-        height: 29
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b453d433101c3280800000000000000
-      internalID: -9062350675499592522
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_2
-      rect:
-        serializedVersion: 2
-        x: 72
-        y: 6
-        width: 20
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e53c02cf97521350800000000000000
-      internalID: 5985943198395807203
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_3
-      rect:
-        serializedVersion: 2
-        x: 103
-        y: 6
-        width: 20
-        height: 36
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 491d354a8f82b9e30800000000000000
-      internalID: 4511244500115640724
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_4
-      rect:
-        serializedVersion: 2
-        x: 136
-        y: 2
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 74d874b4bd087c070800000000000000
-      internalID: 8126605731962522951
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_5
-      rect:
-        serializedVersion: 2
-        x: 167
-        y: 31
-        width: 20
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b9bf8167dfdbd6b30800000000000000
-      internalID: 4282287717004934043
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_6
-      rect:
-        serializedVersion: 2
-        x: 196
-        y: 22
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 83e2f52a448b2db20800000000000000
-      internalID: 3157788893661572664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: curtains_7
-      rect:
-        serializedVersion: 2
-        x: 262
+        x: 3
         y: 7
-        width: 20
-        height: 35
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        width: 23
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79ed2ffda2597cb30800000000000000
-      internalID: 4307575579981569687
+      spriteID: 53b22717061a7bb90800000000000000
+      internalID: -7226129641500431563
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtains_8
+      name: PigeonEat_1
       rect:
         serializedVersion: 2
-        x: 293
-        y: 2
-        width: 20
-        height: 40
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 34
+        y: 7
+        width: 25
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48bc5f913941b31a0800000000000000
-      internalID: -6828841787948938364
+      spriteID: e82237570c99c2240800000000000000
+      internalID: 4768355157361762958
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: curtains_9
+      name: PigeonEat_2
       rect:
         serializedVersion: 2
-        x: 228
-        y: 21
-        width: 22
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 66
+        y: 7
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3605a30fb46c7a0e0800000000000000
-      internalID: -2258618658647814045
+      spriteID: 191e4add809125460800000000000000
+      internalID: 7228867877752070545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_3
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 7
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b64a73a53d844eb80800000000000000
+      internalID: -8366482135158643605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_4
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 7
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b43bbb6573c10130800000000000000
+      internalID: 3531318491921200308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 7
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97d298437f6ad410800000000000000
+      internalID: 1502635966610986910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_6
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 7
+        width: 27
+        height: 15
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4b3310ae59f4b60800000000000000
+      internalID: 7732563917493482718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_7
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 7
+        width: 25
+        height: 18
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9daf19f66ee510230800000000000000
+      internalID: 3603265520680434393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PigeonEat_8
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 7
+        width: 23
+        height: 20
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da8f227718a69bd90800000000000000
+      internalID: -7081511834781288275
       vertices: []
       indices: 
       edges: []
