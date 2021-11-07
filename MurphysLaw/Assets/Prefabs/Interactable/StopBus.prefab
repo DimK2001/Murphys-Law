@@ -146,7 +146,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &357026843
 Transform:
   m_ObjectHideFlags: 0
@@ -223,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1155016584}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0.8, y: 0, z: 0}
   m_LocalScale: {x: 13.5, y: 2.8788, z: 1}
   m_Children: []
   m_Father: {fileID: 924259036}
@@ -617,7 +617,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Interactable: 1
-  Stair: {fileID: 0}
+  Stair: {fileID: 357026842}
 --- !u!1 &3159201378197862482
 GameObject:
   m_ObjectHideFlags: 0
@@ -717,7 +717,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 281e50c5d841e1443b216c4a1ef8d455, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.368
   m_Pitch: 1
   Loop: 1
   Mute: 0
