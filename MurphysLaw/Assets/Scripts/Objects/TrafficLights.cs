@@ -12,6 +12,7 @@ public class TrafficLights : IntreactiveObject
     public GameObject BusStop;
     public override void Interact(GameObject _player)
     {
+        //GetComponent<Trigger>().playerInside = false;
         if (Green.activeInHierarchy)
         {
             Green.SetActive(false);

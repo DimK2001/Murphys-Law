@@ -8,7 +8,6 @@ public class InteractiveTrigger : Trigger
     {
         if (playerInside)
         {
-            playerInside = false;
             GetComponent<IntreactiveObject>().Interact(player);
         }
     }

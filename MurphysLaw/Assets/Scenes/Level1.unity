@@ -3811,10 +3811,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftRedHouse
       objectReference: {fileID: 0}
-    - target: {fileID: 432838687153053713, guid: b8535f7a91ec1b9468d4ea2499aa467d, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8535f7a91ec1b9468d4ea2499aa467d, type: 3}
 --- !u!1001 &958166931144598611

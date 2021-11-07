@@ -7,7 +7,7 @@ public class Trigger : MonoBehaviour
     public GameObject Glow;
     public string AnimationName;
 
-    protected bool playerInside = false;
+    public bool playerInside = false;
     protected GameObject player;
     protected GameObject ButtonImg;
 
