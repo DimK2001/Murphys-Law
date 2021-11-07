@@ -15,6 +15,7 @@ public class Trigger : MonoBehaviour
     {
         if (playerInside && Input.GetButtonDown("Interact"))
         {
+            playerInside = false;
             player.GetComponent<Player>().PlayAnimation(AnimationName);
             player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
