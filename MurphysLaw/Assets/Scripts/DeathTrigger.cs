@@ -4,11 +4,19 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class DeathTrigger : MonoBehaviour
 {
+    public string Name;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            if (Name != "")
+            {
+                SceneManager.LoadScene(Name);
+            }
+            else
+            {
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            }
         }
     }
 }

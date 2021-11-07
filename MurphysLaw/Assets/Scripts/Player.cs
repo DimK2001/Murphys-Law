@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class Player : MonoBehaviour
 {
     public float Speed = 10;
@@ -18,9 +18,11 @@ public class Player : MonoBehaviour
 
     public bool onStairs;
     public float directX;
+    public bool canWalk;
     private void Start()
     {
         onStairs = false;
+        canWalk = true; 
         rb = GetComponent<Rigidbody2D>();
         col = GetComponent<Collider2D>();
         anim = GetComponent<Animator>();
@@ -38,7 +40,7 @@ public class Player : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
         }
         
-        if (col.IsTouchingLayers(1 << 3))//Проверка, что игрок стоит на полу (слой 3)
+        if (col.IsTouchingLayers(1 << 3) && canWalk)//Проверка, что игрок стоит на полу (слой 3)
         {
             rb.velocity = Vector2.zero;
             rb.velocity = new Vector2(Speed * horizontaMoveInput, rb.velocity.y);
@@ -119,5 +121,9 @@ public class Player : MonoBehaviour
     public void TeleportPlayer()
     {
         nowTp.TeleportToEnd();
+    }
+    public void LoadScene()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

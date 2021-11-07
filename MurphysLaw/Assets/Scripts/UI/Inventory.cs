@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     }
     public void DelItem(int _num)
     {
-        GameObject item = itemsInInventory.Find(x => x.GetComponent<UIItem>().Type == (Item)_num);
+        GameObject item = itemsInInventory[_num];
         itemsInInventory.Remove(item);
         Destroy(item);
     }

@@ -5,15 +5,13 @@ using UnityEngine;
 public class MonologueTrigger : Trigger
 {
     public GameObject Monologue;
+    public string[] Text;
     private void Update()
     {
         if (playerInside && Input.GetButtonDown("Interact"))
         {
-            Monologue.SetActive(true);
-        }
-        else if(!playerInside && Monologue.activeInHierarchy)
-        {
-            Monologue.SetActive(false);
+            Monologue.GetComponent<Dialog>().Text = Text;
+            Monologue.GetComponent<Dialog>().Activate();
         }
     }
 }
