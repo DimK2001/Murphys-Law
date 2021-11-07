@@ -9,5 +9,5 @@ public class UIItem : MonoBehaviour
 
 public enum Item
 {
-    screwdriver, tape, boots
+    screwdriver, tape, keys
 }

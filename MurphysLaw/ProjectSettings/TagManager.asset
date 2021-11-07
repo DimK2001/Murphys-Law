@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Button
   - RoomCamera
+  - TheEndCamera
   layers:
   - Default
   - TransparentFX
