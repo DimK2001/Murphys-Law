@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
     private void FixedUpdate()
     {
         float horizontaMoveInput = Input.GetAxis("Horizontal");
-
+        
         if (horizontaMoveInput < 0 && transform.localScale.x == 1)
         {
             transform.localScale = new Vector3(-1, 1, 1);
@@ -64,12 +64,8 @@ public class Player : MonoBehaviour
             onStairs = false;
             transform.position = new Vector3(transform.position.x - 1f, transform.position.y, 0f);
         }*/
-
-    }
-
-    private void Update()
-    {
         UpOnStairs();
+
     }
 
     public void UpOnStairs()
@@ -95,7 +91,6 @@ public class Player : MonoBehaviour
                 //GetComponent<AudioSource>().Stop();
             }
             
-            // Тут должна быть анимация карабкания
             rb.transform.localScale = new Vector3(directX, 1, 1);
         }
         else if (!onStairs)

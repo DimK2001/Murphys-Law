@@ -781,11 +781,6 @@ Transform:
   m_Father: {fileID: 101098892}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 46.749}
---- !u!1 &148193873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5883947463387603619, guid: c607909442057cb4dba9e58031010278, type: 3}
-  m_PrefabInstance: {fileID: 9045514081556802173}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &274543709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,10 +1283,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 786637949750174944, guid: 94a34023589052c4ca7f53b24b581c61, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 786637949750174946, guid: 94a34023589052c4ca7f53b24b581c61, type: 3}
       propertyPath: PlotDeath
       value: 
       objectReference: {fileID: 560465242}
+    - target: {fileID: 786637949750174946, guid: 94a34023589052c4ca7f53b24b581c61, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 786637949750174953, guid: 94a34023589052c4ca7f53b24b581c61, type: 3}
       propertyPath: m_Name
       value: Log
@@ -3755,14 +3758,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 432838686778085200, guid: b8535f7a91ec1b9468d4ea2499aa467d, type: 3}
-      propertyPath: Colliders
-      value: 
-      objectReference: {fileID: 1738841276}
-    - target: {fileID: 432838686924902613, guid: b8535f7a91ec1b9468d4ea2499aa467d, type: 3}
-      propertyPath: Colliders
-      value: 
-      objectReference: {fileID: 1738841276}
     - target: {fileID: 432838687153053711, guid: b8535f7a91ec1b9468d4ea2499aa467d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -3868,18 +3863,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: OrangeHouse
       objectReference: {fileID: 0}
-    - target: {fileID: 958166930328484194, guid: 80b32251135fdc642bea1ea3d885fc2f, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 958166930637859636, guid: 80b32251135fdc642bea1ea3d885fc2f, type: 3}
-      propertyPath: Glow
-      value: 
-      objectReference: {fileID: 148193873}
-    - target: {fileID: 958166930637859636, guid: 80b32251135fdc642bea1ea3d885fc2f, type: 3}
-      propertyPath: endOffsetPlayerPos
-      value: 
-      objectReference: {fileID: 3342387773161426044}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80b32251135fdc642bea1ea3d885fc2f, type: 3}
 --- !u!1001 &1834151169375809048
@@ -4019,6 +4002,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Glow: {fileID: 3342387773967765714}
   AnimationName: 
+  playerInside: 0
+  playerHasExit: 1
   startOffsetPlayerPos: {fileID: 3342387773161426044}
   endOffsetPlayerPos: {fileID: 896166368}
 --- !u!4 &3342387773161426044

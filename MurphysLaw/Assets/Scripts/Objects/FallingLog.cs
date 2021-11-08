@@ -7,6 +7,7 @@ public class FallingLog : IntreactiveObject
     public GameObject PlotDeath;
     public override void Interact(GameObject _player)
     {
+        _player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Kinematic;
         GetComponent<AudioSource>().Play();
         PlotDeath.SetActive(true);
         GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;

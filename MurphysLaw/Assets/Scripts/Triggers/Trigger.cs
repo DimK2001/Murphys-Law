@@ -8,6 +8,7 @@ public class Trigger : MonoBehaviour
     public string AnimationName;
 
     public bool playerInside = false;
+    public bool playerHasExit = true;
     protected GameObject player;
     protected GameObject ButtonImg;
 
@@ -40,6 +41,7 @@ public class Trigger : MonoBehaviour
             Glow.gameObject.SetActive(false);
             ButtonImg.gameObject.SetActive(false);
             playerInside = false;
+            playerHasExit = true;
             //player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         }
     }
